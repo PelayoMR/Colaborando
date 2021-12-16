@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/carousel.js"></script>
+    <script src="https://kit.fontawesome.com/2250412b54.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/fotos/favicon.jpg">
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="logo">
+            <a href="./index.html">
+                <p class="logop1">El</p>
+                <p class="logop2">Universo</p>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./fomulario.html">Formulario</a>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                    </ul>
+                </li>
+                <li><a href="./tabs.html">Tabs</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div class="warpper">
+            <input class="radio" id="one" name="group" type="radio" checked>
+            <input class="radio" id="two" name="group" type="radio">
+            <input class="radio" id="three" name="group" type="radio">
+            <div class="tabs">
+                <label class="tab" id="one-tab" for="one">Video</label>
+                <label class="tab" id="two-tab" for="two">Imagenes</label>
+                <label class="tab" id="three-tab" for="three">Explicación</label>
+            </div>
+            <div class="panels">
+                <div class="panel" id="one-panel">
+                    <div class="panel-title">Video explicativo el origen del Universo</div>
+                    <iframe src="https://www.youtube.com/embed/yg_A80TMhaM" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="panel" id="two-panel">
+                    <div class="panel-title">Carousel de imagenes del espacio</div>
+                    <div class="fotos">
+                        <div class="retroceder"><i class="fas fa-chevron-left"></i></div>
+                        <div class="imagen"><img class="foto"src="fotos/carousel/foto1.jpg" alt=""></div>
+                        <div class="avanzar"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+                <div class="panel" id="three-panel">
+                    <div class="panel-title">Explicación de cuerpos celestes</div>
+                    <h3>Los cometas</h3>
+                    <p>Los cometas son cuerpos astronómicos con un tamaño promedio de unos 10 kilómetros de diámetro y que orbitan alrededor del Sol siguiendo unas órbitas muy excéntricas a velocidades de hasta 188.000 kilómetros por hora.</p>
+                    <h3>Los Asteroides</h3>
+                    <p>Un asteroide es un cuerpo celeste rocoso más grande que un meteoroide pero más pequeño que un planeta y, normalmente, que un satélite. Los más grandes tienen un diámetro de 1.000 km y se trata de cuerpos astronómicos de naturaleza
+                        rocosa que orbitan siguiendo una órbita alrededor del Sol que, en el caso de los del Sistema Solar, se encuentra entre la de Marte y la de Júpiter. Su desintegración provoca la formación de los meteoroides.</p>
+                    <h3>Los satélite</h3>
+                    <p>Un satélite natural es un cuerpo astronómico de naturaleza rocosa más grande (generalmente) que un asteroide (Ganímedes tiene un diámetro de 5.268 km pero Fobos, de solo 22 km), aunque lo verdaderamente importante es que orbita alrededor
+                        de un planeta. La Tierra tiene un único satélite (la Luna), pero hay un total de 168 satélites girando alrededor de los planetas del Sistema Solar.</p>
+                    <h3>Los planetas enanaos</h3>
+                    <p>Los planetas enanos son la frontera entre un satélite y un planeta propiamente dicho. A diferencia de los satélites, orbitan alrededor de una estrella, pero no cumplen con la condición de haber despejado su órbita. Su masa no es lo
+                        suficientemente grande como para limpiar su recorrido de otros cuerpos celestes. Plutón es el claro ejemplo de ello. Con sus 2.376 km (prácticamente la mitad de Ganímedes, el satélite más grande de Júpiter), es demasiado pequeño
+                        como para poder ser considerado como planeta en el sentido estricto de la palabra.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>

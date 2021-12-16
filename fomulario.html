@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2250412b54.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/fotos/favicon.jpg">
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="logo">
+            <a href="./index.html">
+                <p class="logop1">El</p>
+                <p class="logop2">Universo</p>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./fomulario.html">Formulario</a>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                    </ul>
+                </li>
+                <li><a href="./tabs.html">Tabs</a></li>
+            </ul>
+        </nav>
+        <div class="form">
+            <div class="title-box">
+                <h3>
+                    Formulario
+                </h3>
+                <span>Campos con * son obligatorios</span>
+            </div>
+            <form class="formulario" name="contacto" action="" method="post">
+                <div class="grupo-entrada">
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="nombre" id="lnombre" class="label">Tu nombre*</label>
+                    <i class="fas fa-user"></i>
+                    <i class="fas" class="error"></i>
+                    <div class="erroneo">
+                        <p>Sin numeros y primera letra en mayuscula</p>
+                    </div>
+                </div>
+                <div class="grupo-entrada">
+                    <input type="text" name="apellido" id="apellido">
+                    <label for="apellido" id="apellido" class="label">Tus apellidos*</label>
+                    <i class="fas fa-user"></i>
+                    <i class="fas" class="error"></i>
+                    <div class="erroneo">
+                        <p>Sin numeros y primera letra en mayuscula</p>
+                    </div>
+                </div>
+                <div class="grupo-entrada">
+                    <input type="text" name="email" id="email">
+                    <label for="email" id="email" class="label">Tu email*</label>
+                    <i class="fas fa-at"></i>
+                    <i class="fas" class="error"></i>
+                    <div class="erroneo">
+                        <p>Formato: example@example.com</p>
+                    </div>
+                </div>
+                <div class="grupo-entrada">
+                    <input type="text" name="dni" id="dni">
+                    <label for="dni" id="dni" class="label">Tu DNI*</label>
+                    <i class="fas fa-id-card"></i>
+                    <i class="fas" class="error"></i>
+                    <div class="erroneo">
+                        <p>Formtato: 12345678A</p>
+                    </div>
+                </div>
+                <div class="grupo-entrada">
+                    <textarea name="comentario" rows="10"></textarea>
+                    <label for="comentario" id="comentario" class="label">Tu comentario</label>
+
+                </div>
+                <div class="grupo">
+                    <label for="operacion" id="operacion" class="label">Resuelve esta operacion <br> para comprobar que eres humano</label><br>
+                    <input type="text" name="op" value="" size="3" disabled id="op"><input type="text" name="resultado" size="3" id="resul">
+                </div>
+
+            </form>
+            <div class="envio">
+                <button class="enviar" disabled>Enviar</button>
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
